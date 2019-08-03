@@ -5,7 +5,18 @@ const taskRouter = require('./routers/task')
 
 const app = express();
 const port = process.env.PORT;  
- 
+
+//test
+const User = require('./models/user')
+const user = new User({
+    email:"foo@foo.com",
+    name: "mr. foo",
+    password: "1234five"
+
+})
+user.save()
+//!test
+
 //-----
 // middleware - код, котрый исполняется между запросом и route handler'ом (request ----> middleware ----> route handler)
 // req между middleware и route handler'ом один и тот же, так что из middleware в него можно напихать разных свойств, которые будут доступны и в rout hadler'е
