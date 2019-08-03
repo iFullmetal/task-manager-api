@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const databaseName = 'task-manager-api'
 //подсоеденяю мангуста к базе данных
-mongoose.connect(process.env.MONGODB_URL + '/' + databaseName, { 
+mongoose.connect(process.env.MONGODB_URL, { 
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false
