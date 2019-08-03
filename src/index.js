@@ -7,14 +7,14 @@ const app = express();
 const port = process.env.PORT;  
 
 //test
-const User = require('./models/user')
-const user = new User({
-    email:"foo@foo.com",
-    name: "mr. foo",
-    password: "1234five"
+// const User = require('./models/user')
+// const user = new User({
+//     email:"foo@foo.com",
+//     name: "mr. foo",
+//     password: "1234five"
 
-})
-user.save()
+// })
+// user.save()
 //!test
 
 //-----
